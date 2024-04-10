@@ -7,13 +7,52 @@
                 name="viewport"
                 content="width=device-width, initial-scale=1.0"
             />
-            <title>My Portfolio</title>
+            <title>Alex Kleiman</title>
             <link rel="stylesheet" href="style.css" />
             <link rel="stylesheet" href="mediaqueries.css" />
         </head>
         <body>
-            This site is currently in the process of being configured. To view
-            my business card, please visit https://tuntiya.dev/card.
+            Note: this site is currently in the process of being configured. To
+            view my business card, please visit https://tuntiya.dev/card.
+            <nav id="desktop-nav">
+                <div class="logo">Alex Kleiman</div>
+                <div>
+                    <ui class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#co">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ui>
+                </div>
+            </nav>
+            <nav id="hamburger-nav">
+                <div class="logo">Alex Kleiman</div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <li>
+                            <a href="#about" onclick="toggleMenu()">About</a>
+                        </li>
+                        <li>
+                            <a href="#co" onclick="toggleMenu()">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#projects" onclick="toggleMenu()"
+                                >Projects</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#contact" onclick="toggleMenu()"
+                                >Contact</a
+                            >
+                        </li>
+                    </div>
+                </div>
+            </nav>
             <script src="script.js"></script>
         </body>
     </html>
