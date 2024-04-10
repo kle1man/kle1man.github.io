@@ -1,0 +1,6 @@
+# MacOS
+.DS_Store
+
+# Parcel
+.parcel-cache
+dist
