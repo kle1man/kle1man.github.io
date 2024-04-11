@@ -107,7 +107,6 @@ html {
     text-decoration: none;
     padding: 12.5px;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 .linkedin,
@@ -138,6 +137,7 @@ html {
     background-size: 32.5px;
     background-repeat: no-repeat;
     background-position: 10px center;
+    margin-bottom: 10px;
 }
 
 .github {
@@ -145,6 +145,7 @@ html {
     background-size: 32.5px;
     background-repeat: no-repeat;
     background-position: 10px center;
+    margin-bottom: 10px;
 }
 
 .instagram {
@@ -152,6 +153,7 @@ html {
     background-size: 32.5px;
     background-repeat: no-repeat;
     background-position: 10px center;
+    margin-bottom: 10px;
 }
 
 .email {
@@ -163,10 +165,10 @@ html {
 
 /* FOOTER */
 
-.footer {
+footer {
     font-size: 0.875rem;
     font-weight: 450;
-    color: gray;
+    color: lightgray;
     user-select: none;
     -webkit-user-select: none;
 }
