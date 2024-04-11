@@ -1,0 +1,184 @@
+/* FONT */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/* GENERAL */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: center;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* CONTAINERS */
+
+.rounded-container {
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* PROFILE PICTURE */
+
+.pfp {
+    margin-top: 10px;
+    width: 100%;
+    height: 30vh;
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* HEADER */
+
+.name {
+    font-size: 1.75rem;
+    font-weight: 600;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.title {
+    margin-top: 2.5px;
+    font-weight: 550;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.education {
+    margin-top: 6.5px;
+    font-size: 0.875rem;
+    font-weight: 550;
+    color: gray;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* LINKS */
+
+.cwm {
+    font-weight: 600;
+    margin-bottom: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    padding: 12.5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.linkedin,
+.github,
+.instagram,
+.email {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: 550;
+    line-height: 1.25rem;
+    padding: 0.75rem 1rem;
+    text-decoration: none #d1d5db solid;
+    text-decoration-thickness: auto;
+    box-shadow:
+        0 1px 3px 0 rgba(0, 0, 0, 0.1),
+        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.linkedin {
+    background-image: url("assets/linkedin.png");
+    background-size: 32.5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.github {
+    background-image: url("assets/github.png");
+    background-size: 32.5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.instagram {
+    background-image: url("assets/instagram.png");
+    background-size: 32.5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.email {
+    background-image: url("assets/email.png");
+    background-size: 32.5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+/* FOOTER */
+
+.footer {
+    font-size: 0.875rem;
+    font-weight: 450;
+    color: gray;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* DESKTOP */
+
+.error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+}

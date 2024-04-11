@@ -8,10 +8,74 @@
                 content="width=device-width, initial-scale=1.0"
             />
             <title>Digital Business Card</title>
+            <!-- STYLE SHEET IMPORTS -->
             <link rel="stylesheet" href="style.css" />
             <link rel="stylesheet" href="mediaqueries.css" />
         </head>
         <body>
+            <!-- MOBILE DEVICE VIEW -->
+            <div class="mobile">
+                <div class="content">
+                    <!-- PROFILE PICTURE -->
+                    <div class="rounded-container">
+                        <div class="pfp">
+                            <img src="assets/pfp.jpeg" alt="profile picture" />
+                        </div>
+                    </div>
+                    <!-- HEADER -->
+                    <div class="rounded-container">
+                        <div class="name">Alex Kleiman</div>
+                        <div class="title">
+                            Head of Marketing, Dream of Coffee
+                        </div>
+                        <div class="education">
+                            B.S. in Computer Science, UMD '27
+                        </div>
+                    </div>
+                    <!-- LINKS -->
+                    <div class="rounded-container">
+                        <div class="cwm">Connect With Me</div>
+                        <div class="buttons" role="button">
+                            <a
+                                href="https://www.linkedin.com/in/kle1man"
+                                class="linkedin"
+                                >LinkedIn</a
+                            >
+                            <a
+                                href="https://www.github.com/kle1man"
+                                class="github"
+                                >GitHub</a
+                            >
+                            <a
+                                href="https://www.instagram.com/dreamofcoffee.official"
+                                class="instagram"
+                                >Dream of Coffee Instagram</a
+                            >
+                            <a
+                                href="mailto:alexjkleiman@gmail.com"
+                                class="email"
+                                >Email</a
+                            >
+                        </div>
+                    </div>
+                    <!-- FOOTER -->
+                    <div class="rounded-container">
+                        <div class="footer">tuntiya.dev/card</div>
+                    </div>
+                </div>
+            </div>
+            <!-- DESKTOP DEVICE VIEW -->
+            <div class="desktop">
+                <div class="error-message">
+                    <h1>403 - Forbidden</h1>
+                    <p>
+                        Apologies, but this website is only viewable on mobile
+                        devices. If you're on a mobile device, please rotate the
+                        screen into a portrait orientation.
+                    </p>
+                </div>
+            </div>
+            <!-- SCRIPT IMPORT -->
             <script src="script.js"></script>
         </body>
     </html>
