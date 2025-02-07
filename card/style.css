@@ -108,9 +108,10 @@ html {
     border-radius: 10px;
 }
 
+.website,
 .linkedin,
-.github,
 .instagram,
+.groupme,
 .email {
     background-color: #ffffff;
     border: 0;
@@ -128,7 +129,20 @@ html {
         0 1px 2px 0 rgba(0, 0, 0, 0.06);
     user-select: none;
     -webkit-user-select: none;
-    touch-action: manipulation;
+}
+
+.button-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.website {
+    background-image: url("assets/safari.png");
+    background-size: 32.5px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    margin-bottom: 10px;
 }
 
 .linkedin {
@@ -139,16 +153,16 @@ html {
     margin-bottom: 10px;
 }
 
-.github {
-    background-image: url("assets/github.png");
+.instagram {
+    background-image: url("assets/instagram.png");
     background-size: 32.5px;
     background-repeat: no-repeat;
     background-position: 10px center;
     margin-bottom: 10px;
 }
 
-.instagram {
-    background-image: url("assets/instagram.png");
+.groupme {
+    background-image: url("assets/groupme.png");
     background-size: 32.5px;
     background-repeat: no-repeat;
     background-position: 10px center;
