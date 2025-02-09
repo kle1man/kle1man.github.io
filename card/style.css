@@ -1,19 +1,28 @@
 /* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
-
-body {
-    font-family: "Inter", sans-serif;
+:root {
+    --background: #FFFFFF;
+    --section-bg: #F8F8F9;
+    --header: #2D545E;
+    --title: #58595B;
+    --description: #7F8C8D;
+    --accent: #178582;
+    --accent-hover: #136865;
+    --accent-shadow: rgba(23, 133, 130, 0.1);
+    --secondary: #EAE7DD;
+    --border: #D9D9D9;
+    --button-text: #2D545E;
 }
 
 /* GENERAL */
-
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
     align-items: center;
+    background-color: var(--section-bg);
 }
 
 body {
@@ -24,26 +33,39 @@ html {
     scroll-behavior: smooth;
 }
 
-/* CONTENT */
+.mobile {
+    width: 100%;
+    background-color: var(--section-bg);
+}
 
+/* CONTENT */
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+    background-color: var(--section-bg); /* White background */
 }
 
 /* CONTAINERS */
-
 .rounded-container {
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    padding: 20px 0;  /* Increased padding */
     border-radius: 10px;
-    overflow: hidden;
+    background-color: var(--section-bg);
+    margin: 0;  /* Added margin between containers */
+}
+
+/* LINKS */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
 }
 
 /* PROFILE PICTURE */
-
 .pfp {
     width: 100%;
     height: 30vh;
@@ -54,58 +76,49 @@ html {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    border: 1px solid var(--border);
     user-select: none;
     -webkit-user-select: none;
 }
 
 /* HEADER */
-
 .name {
+    font-family: 'Outfit', sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--header);
     user-select: none;
     -webkit-user-select: none;
 }
 
 .title {
+    font-family: 'DM Sans', sans-serif;
     margin-top: 2.5px;
     font-weight: 550;
+    color: var(--title);
     user-select: none;
     -webkit-user-select: none;
 }
 
 .education {
+    font-family: 'DM Sans', sans-serif;
     margin-top: 6.5px;
     font-size: 0.875rem;
     font-weight: 550;
-    color: gray;
+    color: var(--description);
     user-select: none;
     -webkit-user-select: none;
 }
 
 /* LINKS */
-
 .cwm {
+    font-family: 'Outfit', sans-serif;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 20px;  /* Increased spacing before buttons */
+    color: var(--header);
     user-select: none;
     -webkit-user-select: none;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.buttons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    padding: 12.5px;
-    border-radius: 10px;
 }
 
 .website,
@@ -113,87 +126,78 @@ html {
 .instagram,
 .groupme,
 .email {
-    background-color: #ffffff;
-    border: 0;
+    display: block;  /* Makes each button take full width */
+    width: calc(100% - 100px);  /* Subtracting padding to maintain proper width */
+    margin: 0 auto;  /* Centers the buttons */
+    background: var(--background);
+    border: 1px solid var(--border);
     border-radius: 10px;
     box-sizing: border-box;
-    color: black;
+    color: var(--button-text);  /* Updated text color */
+    font-family: 'DM Sans', sans-serif;
     font-size: 0.875rem;
-    font-weight: 550;
+    font-weight: 500;
     line-height: 1.25rem;
-    padding: 0.75rem 1rem;
-    text-decoration: none #d1d5db solid;
-    text-decoration-thickness: auto;
-    box-shadow:
-        0 1px 3px 0 rgba(0, 0, 0, 0.1),
-        0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    padding: 0.75rem 1rem 0.75rem 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px var(--accent-shadow);
     user-select: none;
     -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.2s ease;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 15px center;
 }
 
-.button-icon {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
+.website:hover,
+.linkedin:hover,
+.instagram:hover,
+.groupme:hover,
+.email:hover {
+    background-color: var(--section-bg);
+    color: var(--accent);  /* Changed hover color to the accent color */
+    transform: translateY(-2px);  /* Added subtle lift effect */
 }
 
 .website {
     background-image: url("assets/safari.png");
-    background-size: 32.5px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    margin-bottom: 10px;
 }
 
 .linkedin {
     background-image: url("assets/linkedin.png");
-    background-size: 32.5px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    margin-bottom: 10px;
 }
 
 .instagram {
     background-image: url("assets/instagram.png");
-    background-size: 32.5px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    margin-bottom: 10px;
 }
 
 .groupme {
     background-image: url("assets/groupme.png");
-    background-size: 32.5px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    margin-bottom: 10px;
 }
 
 .email {
     background-image: url("assets/email.png");
-    background-size: 32.5px;
-    background-repeat: no-repeat;
-    background-position: 10px center;
 }
 
 /* FOOTER */
-
 footer {
+    font-family: 'DM Sans', sans-serif;
     font-size: 0.875rem;
     font-weight: 450;
-    color: lightgray;
+    color: var(--description);
     user-select: none;
     -webkit-user-select: none;
 }
 
 /* DESKTOP */
-
 .error-message {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: var(--description);
     user-select: none;
     -webkit-user-select: none;
 }
