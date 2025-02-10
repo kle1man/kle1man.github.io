@@ -120,8 +120,9 @@ html {
     -webkit-user-select: none;
 }
 
-.website,
+/* .website, */
 .linkedin,
+.handshake,
 .instagram,
 .groupme,
 .email {
@@ -149,8 +150,9 @@ html {
     background-position: 12px center;
 }
 
-.website:hover,
+/* .website:hover, */
 .linkedin:hover,
+.handshake:hover,
 .instagram:hover,
 .groupme:hover,
 .email:hover {
@@ -159,12 +161,16 @@ html {
     transform: translateY(-2px);
 }
 
-.website {
+/* .website {
     background-image: url("assets/safari.png");
-}
+} */
 
 .linkedin {
     background-image: url("assets/linkedin.png");
+}
+
+.handshake {
+    background-image: url("assets/handshake.png");
 }
 
 .instagram {

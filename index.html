@@ -1,59 +1,178 @@
-<yarn add parcelc!doctype html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0"
-            />
-            <title>Alex Kleiman</title>
-            <link rel="stylesheet" href="style.css" />
-            <link rel="stylesheet" href="mediaqueries.css" />
-        </head>
-        <body>
-            Note: this site is currently in the process of being configured. To
-            view my business card, please visit https://tuntiya.dev/card.
-            <nav id="desktop-nav">
-                <div class="logo">Alex Kleiman</div>
-                <div>
-                    <ui class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#co">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ui>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alexander Kleiman</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+            :root {
+                --background: #F5F5F0;
+                --section-bg: #EFEFE8;
+                --header: #0F3D3E;
+                --title: #1E4D4E;
+                --description: #526666;
+                --accent: #2D5C5C;
+                --accent-hover: #1E4D4E;
+                --accent-shadow: rgba(15, 61, 62, 0.1);
+                --secondary: #D8D0C5;
+                --border: #D8D0C5;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Playfair Display", serif;
+                background-color: var(--background);
+                color: var(--description);
+                line-height: 1.6;
+                min-height: 100vh;
+            }
+
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 4rem 2rem;
+            }
+
+            .intro {
+                display: flex;
+                align-items: center;
+                gap: 3rem;
+                margin-bottom: 4rem;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                flex-shrink: 0;
+            }
+
+            .profile-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .intro-text h1 {
+                color: var(--header);
+                font-size: 2.5rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            .intro-text h2 {
+                color: var(--title);
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin-bottom: 1rem;
+            }
+
+            .story {
+                margin-bottom: 3rem;
+                font-size: 1.1rem;
+            }
+
+            .story h3 {
+                color: var(--header);
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .story p {
+                margin-bottom: 1.5rem;
+            }
+
+            .links {
+                display: flex;
+                gap: 1rem;
+                justify-content: flex-start;
+                margin-top: 2rem;
+            }
+
+            .link {
+                color: var(--accent);
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
+
+            .link:hover {
+                color: var(--accent-hover);
+            }
+
+            .resume-link {
+                display: inline-block;
+                margin-top: 1rem;
+                padding: 0.5rem 1rem;
+                border: 1px solid var(--border);
+                border-radius: 5px;
+                text-decoration: none;
+                color: var(--accent);
+                font-size: 0.9rem;
+                transition: all 0.3s ease;
+            }
+
+            .resume-link:hover {
+                background-color: var(--section-bg);
+                transform: translateY(-2px);
+            }
+
+            @media (max-width: 768px) {
+                .intro {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 1.5rem;
+                }
+
+                .profile-image {
+                    width: 150px;
+                    height: 150px;
+                }
+
+                .links {
+                    justify-content: center;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <section class="intro">
+                <div class="profile-image">
+                    <img src="assets/pfp.jpeg" alt="Alexander Kleiman" />
                 </div>
-            </nav>
-            <nav id="hamburger-nav">
-                <div class="logo">Alex Kleiman</div>
-                <div class="hamburger-menu">
-                    <div class="hamburger-icon" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="menu-links">
-                        <li>
-                            <a href="#about" onclick="toggleMenu()">About</a>
-                        </li>
-                        <li>
-                            <a href="#co" onclick="toggleMenu()">Experience</a>
-                        </li>
-                        <li>
-                            <a href="#projects" onclick="toggleMenu()"
-                                >Projects</a
-                            >
-                        </li>
-                        <li>
-                            <a href="#contact" onclick="toggleMenu()"
-                                >Contact</a
-                            >
-                        </li>
+                <div class="intro-text">
+                    <h1>Alexander Kleiman</h1>
+                    <h2>Pre-Medical Student | Psychology</h2>
+                    <p>Co-President of Pre-SOMA @ UMD</p>
+                    <div class="links">
+                        <a href="#" class="link">Email</a>
+                        <a href="#" class="link">LinkedIn</a>
+                        <a href="#" class="resume-link">View Resume</a>
                     </div>
                 </div>
-            </nav>
-            <script src="script.js"></script>
-        </body>
-    </html>
-</yarn>
+            </section>
+
+            <section class="story">
+                <h3>My Journey</h3>
+                <p>
+                    As a psychology major with a passion for medicine, I'm on a unique path that combines mental health understanding with medical aspirations. My journey began in a different field, but through personal experiences and academic exploration, I discovered my true calling in medicine.
+                </p>
+                <p>
+                    Currently, I serve as the Co-President of Pre-SOMA at the University of Maryland, where I work to create opportunities for fellow students interested in osteopathic medicine. This leadership role has strengthened my commitment to building community in healthcare education.
+                </p>
+                <p>
+                    I'm in the early stages of my pre-medical journey, eager to gain clinical experience and research opportunities while maintaining a strong academic foundation in psychology and pre-medical sciences.
+                </p>
+            </section>
+        </div>
+    </body>
+</html>
