@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+    --background: #F5F5F0;
+    --section-bg: #EFEFE8;
+    --header: #0F3D3E;
+    --title: #1E4D4E;
+    --description: #526666;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    background-color: var(--section-bg);
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mobile {
+    width: 100%;
+    background-color: var(--section-bg);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--section-bg);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.rounded-container {
+    width: 100%;
+    padding: 6px 0;
+    border-radius: 10px;
+    background-color: var(--section-bg);
+    margin: 0;
+}
+
+.error-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--header);
+    user-select: none;
+    -webkit-user-select: none;
+    margin-top: 0px;
+}
+
+footer {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--description);
+    user-select: none;
+    -webkit-user-select: none;
+}
